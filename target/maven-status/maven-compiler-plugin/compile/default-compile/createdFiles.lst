@@ -1,0 +1,8 @@
+co\vivaeventos\ticketservice\model\Ticket.class
+co\vivaeventos\ticketservice\service\QRCodeService.class
+co\vivaeventos\ticketservice\controller\TicketController$GenerateTicketRequest.class
+co\vivaeventos\ticketservice\TicketServiceApplication.class
+co\vivaeventos\ticketservice\controller\TicketController.class
+co\vivaeventos\ticketservice\repository\TicketRepository.class
+co\vivaeventos\ticketservice\service\TicketService.class
+co\vivaeventos\ticketservice\controller\TicketController$ValidateRequest.class
