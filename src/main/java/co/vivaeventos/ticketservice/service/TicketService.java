@@ -62,11 +62,9 @@ public class TicketService {
         Ticket ticket = ticketRepository.findByTicketNumber(ticketNumber)
                 .orElseThrow(() -> new RuntimeException("Boleta no encontrada"));
         
-        if (ticket.isUsed()) {
-            throw new RuntimeException("Esta boleta ya ha sido utilizada");
-        }
-        
-        return ticket;
+        // NO lanzar excepción, solo devolver el ticket con su estado
+        // El Validation Service decidirá qué hacer
+        return ticket;  
     }
     
     public Ticket markAsUsed(Long orderId) {

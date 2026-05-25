@@ -1,6 +1,6 @@
-C:\Users\david\Desktop\Vivaeventos\microservicios-vivaeventos\ticket-service\src\main\java\co\vivaeventos\ticketservice\controller\TicketController.java
-C:\Users\david\Desktop\Vivaeventos\microservicios-vivaeventos\ticket-service\src\main\java\co\vivaeventos\ticketservice\repository\TicketRepository.java
-C:\Users\david\Desktop\Vivaeventos\microservicios-vivaeventos\ticket-service\src\main\java\co\vivaeventos\ticketservice\service\TicketService.java
-C:\Users\david\Desktop\Vivaeventos\microservicios-vivaeventos\ticket-service\src\main\java\co\vivaeventos\ticketservice\service\QRCodeService.java
-C:\Users\david\Desktop\Vivaeventos\microservicios-vivaeventos\ticket-service\src\main\java\co\vivaeventos\ticketservice\model\Ticket.java
-C:\Users\david\Desktop\Vivaeventos\microservicios-vivaeventos\ticket-service\src\main\java\co\vivaeventos\ticketservice\TicketServiceApplication.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\service\QRCodeService.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\TicketServiceApplication.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\repository\TicketRepository.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\controller\TicketController.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\model\Ticket.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\service\TicketService.java

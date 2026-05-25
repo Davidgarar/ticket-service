@@ -48,11 +48,12 @@ public class TicketController {
         Map<String, Object> response = new HashMap<>();
         response.put("valid", true);
         response.put("ticketNumber", ticket.getTicketNumber());
+        response.put("orderId", ticket.getOrderId());  // <--- AGREGAR ESTA LÍNEA
+        response.put("quantity", ticket.getQuantity());
         response.put("eventName", ticket.getEventName());
-        response.put("eventDate", ticket.getEventDate());
         response.put("location", ticket.getLocation());
         response.put("ticketType", ticket.getTicketType());
-        response.put("quantity", ticket.getQuantity());
+        response.put("eventDate", ticket.getEventDate());
         
         return ResponseEntity.ok(response);
     }
