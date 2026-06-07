@@ -11,6 +11,7 @@ public interface TicketRepository extends JpaRepository<Ticket, Long> {
     Optional<Ticket> findByTicketNumber(String ticketNumber);
 
     List<Ticket> findByUserEmailAndEventNameContainingIgnoreCase(String userEmail, String eventName);
-
+// Agrega esta firma en tu interfaz TicketRepository
+    List<Ticket> findByEventDateAndUsedFalse(String eventDate);
     
 }

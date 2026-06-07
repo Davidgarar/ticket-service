@@ -1,4 +1,6 @@
 C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\service\QRCodeService.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\client\EmailServiceClient.java
+C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\scheduler\EventReminderScheduler.java
 C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\TicketServiceApplication.java
 C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\repository\TicketRepository.java
 C:\Users\hinca\Desktop\VivaEventos-Project\ticket-service\src\main\java\co\vivaeventos\ticketservice\controller\TicketController.java
