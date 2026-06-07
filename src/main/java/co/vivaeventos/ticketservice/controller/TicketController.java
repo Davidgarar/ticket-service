@@ -1,6 +1,7 @@
 package co.vivaeventos.ticketservice.controller;
 
 import co.vivaeventos.ticketservice.model.Ticket;
+import co.vivaeventos.ticketservice.service.QRCodeService;
 import co.vivaeventos.ticketservice.service.TicketService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import java.util.Map;
 public class TicketController {
 
     private final TicketService ticketService;
+    private final QRCodeService qrCodeService;
 
     @PostMapping("/generate")
     public ResponseEntity<Ticket> generateTicket(@RequestBody GenerateTicketRequest request) {
@@ -54,6 +56,17 @@ public class TicketController {
         response.put("location", ticket.getLocation());
         response.put("ticketType", ticket.getTicketType());
         response.put("eventDate", ticket.getEventDate());
+        
+        return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/validate-qr")
+    public ResponseEntity<Map<String, Object>> validateQRCode(@RequestBody ValidateQRRequest request) {
+        String qrData = qrCodeService.validateQRCode(request.getQrCode());
+        
+        Map<String, Object> response = new HashMap<>();
+        response.put("valid", true);
+        response.put("qrData", qrData);
         
         return ResponseEntity.ok(response);
     }
@@ -118,5 +131,12 @@ public class TicketController {
         
         public String getTicketNumber() { return ticketNumber; }
         public void setTicketNumber(String ticketNumber) { this.ticketNumber = ticketNumber; }
+    }
+
+    public static class ValidateQRRequest {
+        private String qrCode;
+        
+        public String getQrCode() { return qrCode; }
+        public void setQrCode(String qrCode) { this.qrCode = qrCode; }
     }
 }
